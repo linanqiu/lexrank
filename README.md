@@ -62,7 +62,16 @@ var topLines = lexrank.summarize(originalText, 5, function (err, toplines, text)
 // }]
 
   console.log(text);
-// The intention of all these rules is to prevent a repeat of the bankruptcies and bail-outs of 2008. By throttling the bits of banks that “make markets” in bonds, shares, currencies and commodities, the theory goes, watchdogs have made such assets less liquid. Meanwhile, the value of outstanding bonds has swollen to record levels, most of them in the hands of asset managers (see chart). That is in part a corollary of banks trimming lending, and so pushing borrowers to the bond market instead, and in part a natural response to low interest rates. They also suspect, however, that the high level of liquidity before the crisis was an anomaly that bankers are harping on about in an effort to roll back regulation.
+// The intention of all these rules is to prevent a repeat of the bankruptcies
+// and bail-outs of 2008. By throttling the bits of banks that “make markets” in
+// bonds, shares, currencies and commodities, the theory goes, watchdogs have
+// made such assets less liquid. Meanwhile, the value of outstanding bonds has
+// swollen to record levels, most of them in the hands of asset managers (see
+// chart). That is in part a corollary of banks trimming lending, and so pushing
+// borrowers to the bond market instead, and in part a natural response to low
+// interest rates. They also suspect, however, that the high level of liquidity
+// before the crisis was an anomaly that bankers are harping on about in an
+// effort to roll back regulation.
 });
 ```
 
@@ -78,30 +87,8 @@ var topLines = lexrank.summarizePage(url, 5, function (err, topLines, text) {
     console.log(err);
   }
   console.log(toplines);
-// [{
-//   weight: 0.16398118821187135,
-//   text: 'The intention of all these rules is to prevent a repeat of the bankruptcies and bail-outs of 2008.',
-//   index: 3
-// }, {
-//   weight: 0.1603637724075845,
-//   text: 'By throttling the bits of banks that “make markets” in bonds, shares, currencies and commodities, the theory goes, watchdogs have made such assets less liquid.',
-//   index: 5
-// }, {
-//   weight: 0.1670898954042791,
-//   text: 'Meanwhile, the value of outstanding bonds has swollen to record levels, most of them in the hands of asset managers (see chart).',
-//   index: 12
-// }, {
-//   weight: 0.17266004699219448,
-//   text: 'That is in part a corollary of banks trimming lending, and so pushing borrowers to the bond market instead, and in part a natural response to low interest rates.',
-//   index: 13
-// }, {
-//   weight: 0.16298329363189878,
-//   text: 'They also suspect, however, that the high level of liquidity before the crisis was an anomaly that bankers are harping on about in an effort to roll back regulation.',
-//   index: 32
-// }]
 
   console.log(text);
-// The intention of all these rules is to prevent a repeat of the bankruptcies and bail-outs of 2008. By throttling the bits of banks that “make markets” in bonds, shares, currencies and commodities, the theory goes, watchdogs have made such assets less liquid. Meanwhile, the value of outstanding bonds has swollen to record levels, most of them in the hands of asset managers (see chart). That is in part a corollary of banks trimming lending, and so pushing borrowers to the bond market instead, and in part a natural response to low interest rates. They also suspect, however, that the high level of liquidity before the crisis was an anomaly that bankers are harping on about in an effort to roll back regulation.
 });
 ```
 
@@ -113,15 +100,11 @@ For example using this [article from The Economist on liquidity in financial mar
 
 The first paragraph shows
 
-```
-TO ENSURE that it meets the 750 new rules on capital imposed in the aftermath of the financial crisis, JPMorgan Chase employs over 950 people. A further 400 or so try to follow around 500 regulations on the liquidity of its assets, designed to stop the bank toppling over if markets seize up. A team of 300 is needed to monitor compliance with the Volcker rule, which in almost 1,000 pages restricts banks from trading on their own account.
-```
+> TO ENSURE that it meets the 750 new rules on capital imposed in the aftermath of the financial crisis, JPMorgan Chase employs over 950 people. A further 400 or so try to follow around 500 regulations on the liquidity of its assets, designed to stop the bank toppling over if markets seize up. A team of 300 is needed to monitor compliance with the Volcker rule, which in almost 1,000 pages restricts banks from trading on their own account.
 
 lexrank produces
 
-```
-The intention of all these rules is to prevent a repeat of the bankruptcies and bail-outs of 2008. By throttling the bits of banks that “make markets” in bonds, shares, currencies and commodities, the theory goes, watchdogs have made such assets less liquid. Meanwhile, the value of outstanding bonds has swollen to record levels, most of them in the hands of asset managers (see chart). That is in part a corollary of banks trimming lending, and so pushing borrowers to the bond market instead, and in part a natural response to low interest rates. They also suspect, however, that the high level of liquidity before the crisis was an anomaly that bankers are harping on about in an effort to roll back regulation.
-```
+> The intention of all these rules is to prevent a repeat of the bankruptcies and bail-outs of 2008. By throttling the bits of banks that “make markets” in bonds, shares, currencies and commodities, the theory goes, watchdogs have made such assets less liquid. Meanwhile, the value of outstanding bonds has swollen to record levels, most of them in the hands of asset managers (see chart). That is in part a corollary of banks trimming lending, and so pushing borrowers to the bond market instead, and in part a natural response to low interest rates. They also suspect, however, that the high level of liquidity before the crisis was an anomaly that bankers are harping on about in an effort to roll back regulation.
 
 Which is way more relevant than the story on JPMorgan. I'm sorry JPMorgan.
 
