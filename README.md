@@ -129,7 +129,7 @@ Which is way more relevant than the story on JPMorgan. I'm sorry JPMorgan.
 
 The MIT License (MIT)
 
-Copyright (c) <2015> <Linan Qiu>
+Copyright (c) <2015> [Linan Qiu](github.com/linanqiu)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
