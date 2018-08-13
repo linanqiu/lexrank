@@ -9,10 +9,14 @@
   function summarizePage(url, lines, callback) {
     request(url, function (err, resp, body) {
       if (err || resp.statusCode != 200) {
-        callback(err);
+        return callback(err);
       }
       var text = unfluff(body).text;
-
+      
+      if (!text) {
+        return callback(new Error('no text to summarize'));
+      }
+      
       summarize(text, lines, callback);
     });
   }
